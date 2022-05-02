@@ -48,7 +48,8 @@ export function AddProductPage() {
     longDescription: yup.string().required('Không thể bỏ trống!'),
     price: yup
       .number()
-      .typeError('Không thể bỏ trống và phải là một số!')
+      .typeError('Phải là một số!')
+      .required('Không thể bỏ trống!')
       .integer('Là một số nguyên!')
       .min(0, 'Không nhỏ hơn 0!'),
     author: yup
@@ -57,12 +58,14 @@ export function AddProductPage() {
       .max(50, 'Chỉ 50 kí tự!'),
     currentNumber: yup
       .number()
-      .typeError('Không thể bỏ trống và phải là một số!')
+      .typeError('Phải là một số!')
+      .required('Không thể bỏ trống!')
       .integer('Là một số nguyên!')
       .min(1, 'Phải lớn hơn 0!'),
     numberOfPage: yup
       .number()
-      .typeError('Không thể bỏ trống và phải là một số!')
+      .typeError('Phải là một số!')
+      .required('Không thể bỏ trống!')
       .integer('Là một số nguyên!')
       .min(1, 'Phải lớn hơn 0!'),
   });

@@ -27,7 +27,7 @@ export const ListItem = styled(Box)(({ theme }) => ({
   padding: '20px 0px',
   width: '100%',
   height: '320px',
-  border: '2px solid blue',
+  border: '2px solid #1976d2',
   borderRadius: '30px',
 
   '& .inner_list': {
@@ -44,7 +44,7 @@ export const ListItem = styled(Box)(({ theme }) => ({
 
 export const ContentStyle = styled(Box)(({ theme }) => ({
   padding: '40px',
-  border: '2px solid blue',
+  border: '2px solid #1976d2',
   borderRadius: '20px',
   display: 'flex',
   gap: '50px',

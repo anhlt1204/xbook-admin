@@ -17,7 +17,7 @@ export const TitleBox = styled(Box)(({ theme }) => ({
 
 export const ViewBox = styled(Box)(({ theme }) => ({
   '& .img_box': {
-    border: '2px solid blue',
+    border: '2px solid #1976d2',
     borderRadius: '20px',
     padding: '20px',
     width: '100%',
@@ -35,7 +35,7 @@ export const ViewBox = styled(Box)(({ theme }) => ({
 
 export const ContentBox = styled(Box)(({ theme }) => ({
   padding: '40px',
-  border: '2px solid blue',
+  border: '2px solid #1976d2',
   borderRadius: '20px',
   display: 'flex',
   flexDirection: 'column',

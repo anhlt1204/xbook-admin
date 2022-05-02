@@ -161,7 +161,7 @@ const LoginBox = styled(Box)(({ theme }) => ({
   width: '450px',
   height: 'auto',
   padding: '50px',
-  border: `1px solid blue`,
+  border: `1px solid #1976d2`,
   borderRadius: '30px',
 
   '.form': {

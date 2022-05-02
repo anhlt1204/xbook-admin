@@ -246,7 +246,7 @@ export function ProductPage() {
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   '&.MuiTableCell-head': {
-    backgroundColor: '#000',
+    backgroundColor: '#1976d2',
     color: '#FFF',
   },
 
@@ -289,7 +289,11 @@ const PaginationCustom = styled(Box)(({ theme }) => ({
 
       '&.active': {
         '&:hover': {
-          background: 'rgba(0,239,255,0.55)',
+          background: '#1976d2',
+
+          '& .MuiSvgIcon-root': {
+            color: '#FFF',
+          },
         },
       },
 

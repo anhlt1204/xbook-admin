@@ -1,9 +1,8 @@
-import { IconButton, Menu, MenuItem } from '@mui/material';
+import { Avatar, IconButton, Menu, MenuItem } from '@mui/material';
 import LogoutIcon from '@mui/icons-material/Logout';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { loginActions } from 'app/pages/LoginPage/slice';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export default function UserMenu() {
   const dispatch = useDispatch();
@@ -28,7 +27,7 @@ export default function UserMenu() {
   return (
     <>
       <IconButton onClick={handleClick} size="small">
-        <AccountCircleIcon fontSize="large" sx={{ color: '#FFF' }} />
+        <Avatar sx={{ bgcolor: 'white', color: '#000' }}>A</Avatar>
       </IconButton>
       <Menu
         anchorEl={anchorEl}
@@ -66,7 +65,7 @@ export default function UserMenu() {
       >
         <MenuItem style={{ gap: '15px' }} onClick={handleLogout}>
           <LogoutIcon />
-          Logout
+          Đăng xuất
         </MenuItem>
       </Menu>
     </>

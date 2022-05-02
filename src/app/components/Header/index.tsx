@@ -23,7 +23,7 @@ export default function Header() {
               fontWeight: 700,
             }}
           >
-            Tâm An
+            XBOOK
           </Typography>
 
           <UserMenu />
