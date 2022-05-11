@@ -177,13 +177,22 @@ export function AccountPage() {
                     </StyledTableCell>
                     <StyledTableCell>
                       <Stack direction="row" spacing={2}>
-                        <IconButton onClick={() => handleOpenShow(e.id)}>
+                        <IconButton
+                          disabled={e.username === 'admin'}
+                          onClick={() => handleOpenShow(e.id)}
+                        >
                           <VisibilityIcon />
                         </IconButton>
-                        <IconButton onClick={() => handleOpenUpdate(e.id)}>
+                        <IconButton
+                          disabled={e.username === 'admin'}
+                          onClick={() => handleOpenUpdate(e.id)}
+                        >
                           <ModeEditIcon />
                         </IconButton>
-                        <IconButton onClick={() => handleOpenDelete(e.id)}>
+                        <IconButton
+                          disabled={e.username === 'admin'}
+                          onClick={() => handleOpenDelete(e.id)}
+                        >
                           <DeleteIcon />
                         </IconButton>
                       </Stack>

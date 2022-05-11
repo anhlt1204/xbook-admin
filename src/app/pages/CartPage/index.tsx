@@ -196,7 +196,7 @@ export function CartPage() {
                     ? () => {}
                     : () => dispatch(actions.setPage(page + 1))
                 }
-                className={page === total_page ? 'disable' : 'active'}
+                className={page >= total_page ? 'disable' : 'active'}
               >
                 <ArrowForwardIosIcon fontSize="small" />
               </Box>
